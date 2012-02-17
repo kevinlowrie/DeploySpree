@@ -10,11 +10,9 @@ gem 'sqlite3'
 
 # Gems used only for assets and not required
 # in production environments by default.
-group :assets do
   gem 'sass-rails',   '~> 3.1.4'
   gem 'coffee-rails', '~> 3.1.1'
   gem 'uglifier', '>= 1.0.3'
-end
 
 gem 'jquery-rails'
 
@@ -22,7 +20,7 @@ gem 'jquery-rails'
 gem 'bcrypt-ruby', '~> 3.0.0'
 
 # Use unicorn as the web server
-gem 'unicorn'
+#gem 'unicorn'
 
 # Deploy with Capistrano
 gem 'capistrano'
@@ -33,16 +31,12 @@ gem 'ruby-debug19', :require => 'ruby-debug'
 gem 'spree', '0.70.3'
 #gem 'spree_blue_theme', :git => 'git://github.com/spree/spree_blue_theme.git'
 
-group :test, :development do
   gem 'rspec-rails', "~> 2.5"
-end
-
-group :test do
   gem 'cucumber-rails'
   gem 'capybara'
   gem 'database_cleaner'
   gem 'factory_girl'
   gem 'email_spec'
-end
+
 
 
